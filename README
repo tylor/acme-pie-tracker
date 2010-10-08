@@ -1,0 +1,18 @@
+This is a simple implementation of an Acme Cafe pie tracker. It uses node.js + WebSockets + Twitter Streaming API to push tweets onto a page and into MongoDB in realtime. It has a long way to go but this is a good start.
+
+Currently working:
+- Insert tweets into MongoDB 
+
+Todo:
+- add socket.IO or similar for cross browser streaming
+- add live sorted leaderboard and recent pies tracking
+- add heuristic analysis to track the kind of pies
+
+To get started: 
+- install node.js
+- clone the repository with 'git clone git://github.com/tylor/acme-pie-tracker.git'
+- move into the directory 'cd acme-pie-tracker'
+- initialize the submodules: 'git submodule init --update'
+- enter your Twitter credentials in acme-pie-tracker.js
+- start server by running 'node acme-pie-tracker.js'.
+- open acme-pie-tracker.html in a modern browser with WebSockets support, like Chrome.

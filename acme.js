@@ -27,7 +27,7 @@ db.open(function(err, db) {
     var twit = new TwitterNode({
       user: 'username', // Yes, use your Twitter account.
       password: 'password',
-      track: ['acme'], // Comma delimited list.
+      track: ['acme_cafe pie'], // acme_cafe && pie.
       // locations: [-122.75, 36.8, -121.75, 37.8] // tweets in SF
     });
     
