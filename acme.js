@@ -2,8 +2,11 @@
  * Using a couple of nice libraries:
  * - http://github.com/technoweenie/twitter-node
  * - http://github.com/miksago/node-websocket-server
+ * - http://github.com/christkv/node-mongodb-native
  *
- * With some guidance from: http://jeffkreeftmeijer.com/2010/experimenting-with-node-js/
+ * With guidance from: http://jeffkreeftmeijer.com/2010/experimenting-with-node-js/
+ * And: http://github.com/mnutt/hummingbird
+ * And: http://www.mongodb.org/display/DOCS/Home
  */
  
 // Get twitter ready.
