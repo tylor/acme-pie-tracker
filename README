@@ -12,7 +12,12 @@ To get started:
 - install node.js
 - clone the repository with 'git clone git://github.com/tylor/acme-pie-tracker.git'
 - move into the directory 'cd acme-pie-tracker'
-- initialize the submodules: 'git submodule init --update'
+- initialize the submodules: 'git submodule update --init'
+- build node-mongodb-native:
+  - move into the directory 'cd libs/node-mongodb-native'
+  - build it by running 'make'
+  - move back to root: 'cd ../..'
 - enter your Twitter credentials in acme-pie-tracker.js
-- start server by running 'node acme-pie-tracker.js'.
+- start mongodb server
+- start Acme pie server by running 'node acme-pie-tracker.js'.
 - open acme-pie-tracker.html in a modern browser with WebSockets support, like Chrome.
