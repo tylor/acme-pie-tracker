@@ -77,6 +77,9 @@ db.open(function(err, db) {
       })
       .addListener('end', function(resp) {
         sys.puts("wave goodbye... " + resp.statusCode);
+        if (resp.statusCode == 401) {
+          sys.puts("You probably haven't entered your Twitter credentials properly.");
+        }
         server.close();
       })
       .addListener('error', function(error) {
@@ -120,7 +123,7 @@ db.open(function(err, db) {
             res.send(text);
           }
           else {
-            res.send("This user doesn't have any pie tweets.");
+            res.render('404.ejs');
           }
         });
       });
